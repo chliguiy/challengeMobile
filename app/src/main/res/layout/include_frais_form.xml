@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_medium">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xxlarge"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:paddingRight="@dimen/spacing_middle"
+        android:text="Frais d'equipe commercial"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/grey_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_xmedium"
+        android:paddingRight="@dimen/spacing_xmedium">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ville_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ville"
+                android:inputType="text"
+                android:maxLength="50" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/depart_km_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/depart_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Depart km"
+                android:inputType="numberDecimal"
+                android:maxLength="50" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/retour_km_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/retour_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Retour Km"
+                android:inputType="numberDecimal"
+                android:maxLength="50" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/parking_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parking"
+                android:inputType="numberDecimal"
+                android:maxLength="50" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/hotel_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hotel"
+                android:inputType="numberDecimal"
+                android:maxLength="50" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/repas_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/repas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rapas"
+                android:inputType="numberDecimal"
+                android:maxLength="50" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/remarque_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/remarque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="Remarque"
+                android:lines="3"
+                android:maxLength="300"
+                android:maxLines="4"
+                android:minLines="3" />
+
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_medium">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:gravity="center_vertical|start"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_medium">
+
+                <TextView
+                    android:id="@+id/date_shipping"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hint_date_ship"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_60" />
+
+                <ImageButton
+                    android:id="@+id/bt_date_shipping"
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_date"
+                    android:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/grey_40" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
