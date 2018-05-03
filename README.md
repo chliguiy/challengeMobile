@@ -1,6 +1,6 @@
 ### challenge Mobile
  ## This is a mobile application for ChallengeAngular 
- # Please change this 
- public static String WEB_URL = ""; in   data/Constant.
+<h2>Please change this </h2>
+ <P> public static String WEB_URL = ""; in   <strong>data/Constant</strong></p>.
 
  
